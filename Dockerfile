@@ -6,10 +6,10 @@ WORKDIR /app
 
 # Copy the compiled Spring Boot JAR file from the host machine to the container
 # Assuming the JAR file is located in the target folder after you build the Spring Boot project
-COPY target/your-app-name.jar app.jar
+COPY target/Devops-integration.jar Devops-integration.jar
 
 # Expose the port your Spring Boot application is running on (9991)
 EXPOSE 9991
 
 # Run the Spring Boot application when the container starts
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "Devops-integration.jar"]
