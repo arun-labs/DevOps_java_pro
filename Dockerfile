@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copy the compiled Spring Boot JAR file from the host machine to the container
 # Assuming the JAR file is located in the target folder after you build the Spring Boot project
-COPY target/Devops-integration.jar Devops-integration.jar
+COPY ./Devops-integration.jar Devops-integration.jar
 
 # Expose the port your Spring Boot application is running on (9991)
 EXPOSE 9991
